@@ -1,3 +1,5 @@
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+
 const commonConfig = {
     module: {
       rules: [
@@ -17,6 +19,9 @@ const commonConfig = {
         },
       ],
     },
+    plugins:[ new HtmlWebpackPlugin({
+      template: './public/index.html',
+    }),]
   };
   
   export default commonConfig ;  // ES Module export

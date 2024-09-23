@@ -1,5 +1,4 @@
 import {merge} from 'webpack-merge';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
 import commonConfig from './webpack.common.js';
 import ModuleFederationPlugin  from 'webpack/lib/container/ModuleFederationPlugin.js';
 const devConfig = {
@@ -17,9 +16,7 @@ const devConfig = {
         marketing:'marketing@http://localhost:8081/remoteEntry.js'
       }
     }),
-    new HtmlWebpackPlugin({
-      template: './public/index.html',
-    }),
+   s
   ],
 };
 
