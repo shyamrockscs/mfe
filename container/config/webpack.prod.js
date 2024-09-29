@@ -4,7 +4,7 @@ import { merge } from 'webpack-merge';
 import commonConfig from './webpack.common.js';
 
 // Access environment variables using Webpack's DefinePlugin or directly set the value
-const domain = process.env.PRODUCTION_DOMAIN || 'https://default-domain.com'; // fallback if env not defined
+const domain = process.env.PRODUCTION_DOMAIN || 'https://d2enr00ydscyjh.cloudfront.net'; // fallback if env not defined
 
 const prodConfig = {
   mode: 'production',
