@@ -10,7 +10,7 @@ const prodConfig = {
   mode: 'production',
   output: {
     filename: '[name].[contenthash].js', // Correct content hashing for production builds
-    publicPath: '/', // Ensure this is correctly set for production deployments
+    publicPath: '/marketing/latest/', // Ensure this is correctly set for production deployments
   },
   plugins: [
     new ModuleFederationPlugin({
