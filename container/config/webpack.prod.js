@@ -16,7 +16,7 @@ const prodConfig = {
     new ModuleFederationPlugin({
       name: 'container',
       remotes: {
-        marketing: `marketing@${domain}/marketing/remoteEntry.js`, // Proper string interpolation
+        marketing: `marketing@${domain}/marketing/latest/remoteEntry.js`, // Proper string interpolation
       },
       shared: packageJson.dependencies, // Share dependencies across federated modules
     }),
